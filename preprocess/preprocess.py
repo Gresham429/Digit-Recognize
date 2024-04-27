@@ -1,6 +1,6 @@
 import pandas as pd
 
-class Preprocesser:
+class Preprocesser(object):
     def __init__(self, file_path) -> None:
         self.file_path = file_path
         self.data = pd.read_csv(file_path)
